@@ -6,6 +6,7 @@
  * 탭해서 클릭하기
  * 세 손가락 드래그
  * 속도 조금 빠르게.
+* 배터리 잔량 퍼센트 표시 : 상태바에 배터리 아이콘 - show percentage
 * [크롬 설치](http://www.google.co.kr/chrome/browser/desktop/) : .dmg
 * // ==== 게임잼
   * [atom 설치](https://atom.io/) : .zip -> 압축 푼 폴더 /App 에 집어넣기.
