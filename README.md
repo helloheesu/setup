@@ -8,6 +8,7 @@
  * 세 손가락 드래그
  * 속도 조금 빠르게.
 * 배터리 잔량 퍼센트 표시 : 상태바에 배터리 아이콘 - show percentage
+
 ## 응용 프로그램 설치
 * [크롬 설치](http://www.google.co.kr/chrome/browser/desktop/) : .dmg
 * [btt 설치](http://www.bettertouchtool.net/) : 폴더 /App 에 집어넣기.
@@ -17,6 +18,7 @@
 * [카카오톡 for Mac OS X 설치](http://www.kakao.com/talk/ko) : App Store 를 통해서.
  * 알람은 Sender 만 보여주고고
  * 시작할 때 켜고 로그인 해 주되 잠금모드.
+
 ## 개발 환경
 * [atom 설치](https://atom.io/) : .zip -> 압축 푼 폴더 /App 에 집어넣기.
 * [nodejs 설치](https://nodejs.org/) : .pkg, npm 도 같이 설치 됨.
