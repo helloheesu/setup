@@ -9,3 +9,5 @@
 * atom 설치
 * nodejs 설치치
 * git 설치
+* // ====
+* btt 설치
