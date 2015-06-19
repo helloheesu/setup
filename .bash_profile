@@ -30,6 +30,8 @@ CommandNumber="\!"
 # http://superuser.com/questions/335396/what-is-the-difference-between-and-in-bash
 # 2>&1
 # http://stackoverflow.com/questions/818255/in-the-shell-what-is-21
+# $? -eq 0
+# http://stackoverflow.com/questions/7101995/what-does-if-eq-0-mean-for-shell-scripts
 # ln : ln -s {{src}} {{dest}}
 
 # curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
