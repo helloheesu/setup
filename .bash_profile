@@ -34,6 +34,11 @@ CommandNumber="\!"
 
 # curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
 source ~/.git-prompt.sh
+# https://gist.github.com/trey/2722934#bash-fanciness
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWSTASHSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWUPSTREAM="verbose"
 
 # Git branch
 # http://code-worrier.com/blog/git-branch-in-bash-prompt/
