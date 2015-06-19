@@ -20,10 +20,6 @@ CommandNumber="\!"
 
 # Colors and Commands
 # http://www.ibm.com/developerworks/linux/library/l-tip-prompt/
-# Git branch
-# http://code-worrier.com/blog/git-branch-in-bash-prompt/
-# http://mediadoneright.com/content/ultimate-git-ps1-bash-prompt
-# https://github.com/iugu/bash-git-status/blob/master/.git-status.bash
 
 # Bash Commands
 # >&
@@ -34,9 +30,15 @@ CommandNumber="\!"
 # http://stackoverflow.com/questions/7101995/what-does-if-eq-0-mean-for-shell-scripts
 # ln : ln -s {{src}} {{dest}}
 
+
+
 # curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
 source ~/.git-prompt.sh
 
+# Git branch
+# http://code-worrier.com/blog/git-branch-in-bash-prompt/
+# https://github.com/iugu/bash-git-status/blob/master/.git-status.bash
+# http://mediadoneright.com/content/ultimate-git-ps1-bash-prompt
 export PS1="$ColorOff[$CommandNumber:$Username] "\
 '$(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
