@@ -33,4 +33,5 @@ CommandNumber="\!"
 # http://stackoverflow.com/questions/818255/in-the-shell-what-is-21
 # ln : ln -s {{src}} {{dest}}
 
-export PS1="$ColorOff[$CommandNumber:$Username] $Path \$ "
+export PS1="$ColorOff[$CommandNumber:$Username] "\
+"$Path \$ "
