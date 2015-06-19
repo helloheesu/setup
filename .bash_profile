@@ -34,4 +34,16 @@ CommandNumber="\!"
 # ln : ln -s {{src}} {{dest}}
 
 export PS1="$ColorOff[$CommandNumber:$Username] "\
+'$(git branch &>/dev/null;\
+if [ $? -eq 0 ]; then \
+  # when Prompt in GIT repo
+  echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
+  if [ "$?" -eq "0" ]; then \
+    # Clean repository - nothing to commit
+    echo "'$Green'"$(__git_ps1 "{%s}"); \
+  else \
+    # Changes to working tree
+    echo "'$Red'"$(__git_ps1 "{%s}"); \
+  fi) '$ColorOff'"; \
+fi)'\
 "$Path \$ "
