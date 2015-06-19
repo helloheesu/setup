@@ -1,4 +1,3 @@
-source ~/.git-prompt.sh
 alias ls="ls -alF"
 
 # Colors
@@ -32,6 +31,9 @@ CommandNumber="\!"
 # 2>&1
 # http://stackoverflow.com/questions/818255/in-the-shell-what-is-21
 # ln : ln -s {{src}} {{dest}}
+
+# curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
+source ~/.git-prompt.sh
 
 export PS1="$ColorOff[$CommandNumber:$Username] "\
 '$(git branch &>/dev/null;\
