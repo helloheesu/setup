@@ -1,4 +1,4 @@
-alias ls="ls -alF"
+alias ls="ls -alhF"
 
 # Colors
 ColorOff="\[\033[0m\]"       # Text Reset
