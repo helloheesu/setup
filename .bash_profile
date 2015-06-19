@@ -43,7 +43,13 @@ if [ $? -eq 0 ]; then \
     echo "'$Green'"$(__git_ps1 "{%s}"); \
   else \
     # Changes to working tree
-    echo "'$Red'"$(__git_ps1 "{%s}"); \
+    echo "$(echo `git status` | grep "Untracked files" > /dev/null 2>&1; \
+    if [ "$?" -eq "0" ]; then \
+      # Untracked files in Repo
+      echo "'$Red'"$(__git_ps1 "{%s+}"); \
+    else \
+      echo "'$Red'"$(__git_ps1 "{%s}"); \
+    fi
   fi) '$ColorOff'"; \
 fi)'\
 "$Path \$ "
