@@ -1,6 +1,5 @@
-# export PS1="[\s]\u:\w\\$\[$(tput sgr0)\]"
-
 source ~/.git-prompt.sh
+alias ls="ls -alF"
 
 # Colors
 ColorOff="\[\033[0m\]"       # Text Reset
@@ -32,5 +31,6 @@ CommandNumber="\!"
 # http://superuser.com/questions/335396/what-is-the-difference-between-and-in-bash
 # 2>&1
 # http://stackoverflow.com/questions/818255/in-the-shell-what-is-21
+# ln : ln -s {{src}} {{dest}}
 
 export PS1="$ColorOff[$CommandNumber:$Username] $Path \$ "
