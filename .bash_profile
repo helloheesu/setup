@@ -86,7 +86,7 @@ fi
 # http://www.tldp.org/LDP/abs/html/localvar.html
 hextodec() {
 # echo "ibase=16; $(echo "${1^^})" | bc # bash version lower than 4
-	x=$(echo "$1" | tr '[a-z]' '[A-Z]')
+	x=$(echo "$1" | sed -e 's/^0[Xx]//' | tr '[a-z]' '[A-Z]')
 	echo "ibase=16; $x" | bc
 }
 alias h2d=hextodec
