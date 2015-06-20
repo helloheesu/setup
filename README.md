@@ -9,10 +9,10 @@
  * 속도 조금 빠르게.
 * 배터리 잔량 퍼센트 표시 : 상태바에 배터리 아이콘 - show percentage
 * 시스템 설정 sound(spotlight 검색) - 이어폰 오른쪽 더 크게..
-* [크롬 종료 전에 경고 표시](https://support.google.com/chrome/answer/95631?hl=ko) : 상태바에 Chrome - Warn Before Quitting(⌘Q)
 
 ## 응용 프로그램 설치
 * [크롬 설치](http://www.google.co.kr/chrome/browser/desktop/) : .dmg
+  * [크롬 종료 전에 경고 표시](https://support.google.com/chrome/answer/95631?hl=ko) : 상태바에 Chrome - Warn Before Quitting(⌘Q)
 * [btt 설치](http://www.bettertouchtool.net/) : 폴더 /App 에 집어넣기.
  * MaxSize 단축키 : 마우스 스냅은 default 로 돼 있고, 키보드 단축키 설정.
  * 시작할 때 항상 켜 주고.
