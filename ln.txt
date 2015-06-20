@@ -1,0 +1,10 @@
+# list of ln's in %HOME%
+
+## ln 사용법
+`ln -s {{src}} [dest] # [dest]는 생략하면 src와 같은 파일명 사용.`
+
+## list of them
+%HOME% 에서 다음 순서로 입력.
+* ln -s ~/Documents/repositories/setup/ settings
+* ln -s ~/Documents/repositories/ repos
+* ln -s ~/settings/.bash_profile
