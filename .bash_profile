@@ -74,13 +74,17 @@ fi
 # http://stackoverflow.com/questions/7131670/make-bash-alias-that-takes-parameter
 # bash shell hex converter
 # http://hints.macworld.com/article.php?story=2003030107340199
-hextodec() {
-# let x=$1
-# echo $x
-	echo "ibase=16; $1" | bc
 # nested echo
 # http://stackoverflow.com/questions/2657012/how-to-properly-nest-bash-backticks
-# echo $(echo "ibase=16; $x" | bc)
+# (standard_in) 1: parse error
+# http://www.unix.com/shell-programming-and-scripting/140049-standard_in-1-parse-error.html
+# expr
+# http://www.unix.com/shell-programming-and-scripting/140222-expr-non-numeric-argument.html
+# convert to UPPER/lower case
+# http://www.cyberciti.biz/faq/linux-unix-shell-programming-converting-lowercase-uppercase/
+hextodec() {
+# echo "ibase=16; $(echo "${1^^})" | bc # bash version lower than 4
+	echo "ibase=16; $(echo "$1" | tr '[a-z]' '[A-Z]')" | bc
 }
 alias h2d=hextodec
 
