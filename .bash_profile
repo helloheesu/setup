@@ -28,7 +28,7 @@ CommandNumber="\!"
 # http://stackoverflow.com/questions/818255/in-the-shell-what-is-21
 # $? -eq 0
 # http://stackoverflow.com/questions/7101995/what-does-if-eq-0-mean-for-shell-scripts
-# ln : ln -s {{src}} {{dest}}
+# ln : ln -s {{src}} [dest] # if skipped, use same file name
 
 
 
