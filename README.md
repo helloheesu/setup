@@ -8,6 +8,7 @@
  * 세 손가락 드래그
  * 속도 조금 빠르게.
 * 배터리 잔량 퍼센트 표시 : 상태바에 배터리 아이콘 - show percentage
+* [크롬 종료 전에 경고 표시](https://support.google.com/chrome/answer/95631?hl=ko) : 상태바에 Chrome - Warn Before Quitting(⌘Q)
 
 ## 응용 프로그램 설치
 * [크롬 설치](http://www.google.co.kr/chrome/browser/desktop/) : .dmg
