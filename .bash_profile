@@ -69,3 +69,20 @@ fi)'\
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+# bash alias argument
+# http://stackoverflow.com/questions/7131670/make-bash-alias-that-takes-parameter
+# bash shell hex converter
+# http://hints.macworld.com/article.php?story=2003030107340199
+hextodec() {
+# let x=$1
+# echo $x
+	echo "ibase=16; $x" | bc
+	echo "hi" # for test
+}
+alias h2d=hextodec
+
+dectohex() {
+	echo "obase=16;ibase=10; $x" | bc
+}
+alias d2h=dectohex
