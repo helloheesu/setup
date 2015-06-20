@@ -25,3 +25,6 @@
 * git 설치 : 터미널에서 `$ git`만 쳐도 xCode 어쩌고하면서 안내해준다.
 * [워드프레스 설치](https://ko.wordpress.org/2014/01/01/mamp를-사용해서-내-컴퓨터에-워드프레스-설치하기/)
  * 안내에 따라 MAMP 설치
+### 터미널 설정
+* [bash_profile](../.bash_profile)
+* [vimrc](../.vimrc)
