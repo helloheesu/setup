@@ -77,12 +77,14 @@ fi
 hextodec() {
 # let x=$1
 # echo $x
-	echo "ibase=16; $x" | bc
-	echo "hi" # for test
+	echo "ibase=16; $1" | bc
+# nested echo
+# http://stackoverflow.com/questions/2657012/how-to-properly-nest-bash-backticks
+# echo $(echo "ibase=16; $x" | bc)
 }
 alias h2d=hextodec
 
 dectohex() {
-	echo "obase=16;ibase=10; $x" | bc
+	echo "obase=16;ibase=10; $1" | bc
 }
 alias d2h=dectohex
