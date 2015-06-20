@@ -1,6 +1,8 @@
 alias la="ls -alhF"
 alias ll="ls -lhF"
 
+bind "set completion-ignore-case on"
+
 # Colors
 ColorOff="\[\033[0m\]"       # Text Reset
 Black="\[\033[0;30m\]"        # Black
