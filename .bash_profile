@@ -84,6 +84,10 @@ fi
 # http://www.cyberciti.biz/faq/linux-unix-shell-programming-converting-lowercase-uppercase/
 # bash local variable scope
 # http://www.tldp.org/LDP/abs/html/localvar.html
+# base regex replace
+# http://stackoverflow.com/questions/13043344/search-and-replace-in-bash-using-regular-expressions
+# base regex match
+# http://www.itworld.com/article/2693361/unix-tip-using-bash-s-regular-expressions.html
 hextodec() {
 # echo "ibase=16; $(echo "${1^^})" | bc # bash version lower than 4
 	x=$(echo "$1" | sed -e 's/^0[Xx]//' | tr '[a-z]' '[A-Z]')
