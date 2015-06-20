@@ -82,9 +82,12 @@ fi
 # http://www.unix.com/shell-programming-and-scripting/140222-expr-non-numeric-argument.html
 # convert to UPPER/lower case
 # http://www.cyberciti.biz/faq/linux-unix-shell-programming-converting-lowercase-uppercase/
+# bash local variable scope
+# http://www.tldp.org/LDP/abs/html/localvar.html
 hextodec() {
 # echo "ibase=16; $(echo "${1^^})" | bc # bash version lower than 4
-	echo "ibase=16; $(echo "$1" | tr '[a-z]' '[A-Z]')" | bc
+	x=$(echo "$1" | tr '[a-z]' '[A-Z]')
+	echo "ibase=16; $x" | bc
 }
 alias h2d=hextodec
 
