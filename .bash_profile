@@ -99,3 +99,9 @@ dectohex() {
 	echo "obase=16;ibase=10; $1" | bc
 }
 alias d2h=dectohex
+
+# http://www.maclife.com/article/columns/terminal_101_using_find_command
+easyfind() {
+	find ./ -iname "$1"
+}
+alias find=easyfind
