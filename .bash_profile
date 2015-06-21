@@ -1,5 +1,5 @@
 alias la="ls -alhF"
-alias ll="ls -lhF"
+alias ls="ls -lhF"
 
 # http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
 # http://manpages.ubuntu.com/manpages/oneiric/man1/bash.1.html > find 'insensitive'
