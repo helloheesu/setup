@@ -1,3 +1,7 @@
+# TODO
+# predict command from history
+# ex) vi -> vi .bash_profile
+
 alias la="ls -alhF"
 alias ls="ls -lhF"
 
