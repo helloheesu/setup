@@ -1,6 +1,15 @@
 # TODO
 # predict command from history
-# ex) vi -> vi .bash_profile
+# ex) vi -> vi .bash_profile || same as "history | grep vi"
+# There's a solution already, outside. : ctrl+R
+# http://unix.stackexchange.com/questions/5366/command-line-completion-from-command-history
+
+# bash tutorials
+# http://wiki.bash-hackers.org/scripting/tutoriallist
+# vim regex
+# http://vimregex.com/#ranges
+# vim yy to clipboard
+# http://superuser.com/questions/690436/how-can-i-copy-into-the-mac-clipboard-from-vim
 
 alias la="ls -alhF"
 alias ls="ls -lhF"
