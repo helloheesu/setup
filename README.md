@@ -37,7 +37,7 @@
    * Ubuntu 에서 껍데기만 더 가벼운 버전.
  * [heroku for php](https://devcenter.heroku.com/articles/getting-started-with-php#introduction) - php 는 v5.5 이미 설치 돼 있음.
    * [Composer](https://getcomposer.org/doc/00-intro.md#globally)  설치
-
+   * heroku toolbelt 설치
 
 ### 터미널 설정
 * [bash_profile](/.bash_profile)
