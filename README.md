@@ -31,6 +31,11 @@
  * java 필요하다고 해서 설치. : [brew 를 사용해서!](http://stackoverflow.com/questions/24342886/how-to-install-java-8-on-mac)
    * [brew](http://brew.sh/) 설치 후 ```brew tap caskroom/cask && brew install brew-cask && brew cask install java```
  * [ftp 플러그인(Remote System Explorer End-User Runtime) 설치](http://pseg.or.kr/pseg/infouse/3105)
+ * Virtual Box 설치
+ * Xubuntu 설치
+   * 32비트, 가상머신 위니까 너무 빡세게(64비트) 못 돌림.
+   * Ubuntu 에서 껍데기만 더 가벼운 버전.
+
 
 ### 터미널 설정
 * [bash_profile](/.bash_profile)
