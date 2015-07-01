@@ -46,9 +46,11 @@
 * [vimrc](/.vimrc)
 
 # Windows 8.1
-* github GUI for Windows
 * Visual Studio 2015 RC
- * github extension for VS
 * Chrome
 * 카카오톡
 * Notepad++
+* sourcetree
+ * [rebase 하는 방법(for amend commit message)](http://stackoverflow.com/questions/17604232/edit-a-commit-message-in-sourcetree-windows-already-pushed-to-remote)
+ * 안타깝게도 push force 는 안 된다고 한다. 터미널 눌러서 해야지 뭐.
+ * 언어는 영어가 낫다. '쌍방향 배치'보다는 'rebase'가 알아듣기 쉽잖아.
