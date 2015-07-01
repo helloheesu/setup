@@ -1,4 +1,4 @@
-# setup : 맥북 포맷하고 한 일들
+# Mac OS X
 ## 맥 설정
 * 번잡한 바로가기 저리 가
  * 독에서 안 쓰는 어플 지우기
@@ -44,3 +44,11 @@
 ### 터미널 설정
 * [bash_profile](/.bash_profile)
 * [vimrc](/.vimrc)
+
+# Windows 8.1
+* github GUI for Windows
+* Visual Studio 2015 RC
+ * github extension for VS
+* Chrome
+* 카카오톡
+* Notepad++
