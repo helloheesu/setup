@@ -11,8 +11,7 @@
 # vim yy to clipboard
 # http://superuser.com/questions/690436/how-can-i-copy-into-the-mac-clipboard-from-vim
 
-alias la="ls -alhF"
-alias ls="ls -lhF"
+alias ls="ls -alhF"
 
 # http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
 # http://manpages.ubuntu.com/manpages/oneiric/man1/bash.1.html > find 'insensitive'
