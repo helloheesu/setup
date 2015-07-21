@@ -23,7 +23,7 @@
 
 ## 개발 환경
 * [atom 설치](https://atom.io/) : .zip -> 압축 푼 폴더 /App 에 집어넣기.
-* [nodejs 설치](https://nodejs.org/) : .pkg, npm 도 같이 설치 됨.
+* [nodejs 설치](http://blog.teamtreehouse.com/install-node-js-npm-mac) : `brew install node`. .pkg, npm 도 같이 설치 됨.
 * git 설치 : 터미널에서 `$ git`만 쳐도 xCode 어쩌고하면서 안내해준다.
 * [워드프레스 설치](https://ko.wordpress.org/2014/01/01/mamp를-사용해서-내-컴퓨터에-워드프레스-설치하기/)
  * 안내에 따라 MAMP 설치
