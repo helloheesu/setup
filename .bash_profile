@@ -12,6 +12,7 @@
 # http://superuser.com/questions/690436/how-can-i-copy-into-the-mac-clipboard-from-vim
 
 alias ls="ls -alhF"
+alias chrome="open -a \"/Applications/Google Chrome.app\""
 
 # http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
 # http://manpages.ubuntu.com/manpages/oneiric/man1/bash.1.html > find 'insensitive'
