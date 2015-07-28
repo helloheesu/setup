@@ -21,6 +21,7 @@
  * 알람은 Sender 만 보여주고고
  * 시작할 때 켜고 로그인 해 주되 잠금모드.
 * [u토렌트](http://www.utorrent.com/intl/ko/)!
+ * **설치할 때 Accept 누르면 안 됨!!** 야후가 시작페이지로 바뀐다고 ㅜㅜ
 
 ## 개발 환경
 * [sublime text 3](http://www.sublimetext.com/3), [package control](https://packagecontrol.io/installation)
