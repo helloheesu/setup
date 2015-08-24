@@ -48,9 +48,21 @@ CommandNumber="\!"
 # http://stackoverflow.com/questions/7101995/what-does-if-eq-0-mean-for-shell-scripts
 
 
+# http://code-worrier.com/blog/autocomplete-git/
+# 
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+else
+  curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+fi
 
-# curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
+
 source ~/.git-prompt.sh
+if [ -f ~/.git-prompt.sh ]; then
+  source ~/.git-prompt.sh
+else
+  curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
+fi
 # https://gist.github.com/trey/2722934#bash-fanciness
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWSTASHSTATE=true
@@ -76,12 +88,6 @@ if [ $? -eq 0 ]; then \
 fi)'\
 "$Path \$ "
 
-
-# http://code-worrier.com/blog/autocomplete-git/
-# curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
 
 # bash alias argument
 # http://stackoverflow.com/questions/7131670/make-bash-alias-that-takes-parameter
