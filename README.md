@@ -20,6 +20,8 @@
 * [카카오톡 for Mac OS X 설치](http://www.kakao.com/talk/ko) : App Store 를 통해서.
  * 알람은 Sender 만 보여주고고
  * 시작할 때 켜고 로그인 해 주되 잠금모드.
+* [u토렌트](http://www.utorrent.com/intl/ko/)!
+ * **설치할 때 Accept 누르면 안 됨!!** 야후가 시작페이지로 바뀐다고 ㅜㅜ
 
 ## 개발 환경
 * [sublime text 3](http://www.sublimetext.com/3), [package control](https://packagecontrol.io/installation)
@@ -34,9 +36,16 @@
    * [brew](http://brew.sh/) 설치 후 ```brew tap caskroom/cask && brew install brew-cask && brew cask install java```
  * [ftp 플러그인(Remote System Explorer End-User Runtime) 설치](http://pseg.or.kr/pseg/infouse/3105)
 * Virtual Box 설치
-* Xubuntu 설치
+* Xubuntu (Ubuntu 에서 껍데기만 더 가벼운 버전.) 설치
   * 32비트, 가상머신 위니까 너무 빡세게(64비트) 못 돌림.
-  * Ubuntu 에서 껍데기만 더 가벼운 버전.
+    * 설치할 때 update skip. (기본 업데이트 서버는 느리니까, 후에 다른 서버로.)
+  * guest 확장 설치 (좀 오래걸림!)
+    * `Device - Insert Guest Addition CD image ...`
+    * 해당 경로로 터미널에서 이동한 후, `sudo ./VBoxLinuxAdditions.run`
+    * 재부팅 (`sudo reboot`)
+  * 업데이트
+    * 제어판 - 소프트웨어&업데이트 - 서버설정을 다음으로 - 다시읽기 말고 닫기.
+    * 터미널에서 `sudo apt-get update` - 서버가 ftp.daum.net 으로 잘 나오는지 확인 - `sudo apt-get upgrade`
 * [heroku for php](https://devcenter.heroku.com/articles/getting-started-with-php#introduction) - php 는 v5.5 이미 설치 돼 있음.
  * [Composer](https://getcomposer.org/doc/00-intro.md#globally)  설치
  * heroku toolbelt 설치
