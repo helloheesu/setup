@@ -13,6 +13,7 @@
 
 alias ls="ls -alhF"
 alias chrome="open -a \"/Applications/Google Chrome.app\""
+alias sublime="open -a \"/Applications/Sublime Text.app\""
 
 # http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
 # http://manpages.ubuntu.com/manpages/oneiric/man1/bash.1.html > find 'insensitive'
@@ -124,3 +125,5 @@ easyfind() {
 	find ./ -iname "$1"
 }
 alias find=easyfind
+
+export PATH=/usr/local/mysql/bin:$PATH 
