@@ -25,6 +25,7 @@
 
 ## 개발 환경
 * [sublime text 3](http://www.sublimetext.com/3), [package control](https://packagecontrol.io/installation)
+  * [ftp sync plugin](http://blog.readiz.com/46#.VfBvZmSqqko)
 * [nodejs 설치](http://blog.teamtreehouse.com/install-node-js-npm-mac) : `brew install node`
  * 혹시 모르니까 업그레이드 : `brew update && brew upgrade node`
  * .pkg, npm 도 같이 설치 됨.
