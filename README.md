@@ -37,8 +37,10 @@
  * [ftp 플러그인(Remote System Explorer End-User Runtime) 설치](http://pseg.or.kr/pseg/infouse/3105)
 * Virtual Box 설치
 * Xubuntu (Ubuntu 에서 껍데기만 더 가벼운 버전.) 설치
-  * 32비트, 가상머신 위니까 너무 빡세게(64비트) 못 돌림.
-    * 설치할 때 update skip. (기본 업데이트 서버는 느리니까, 후에 다른 서버로.)
+  * i386 / amd64
+    * 간단히 말해서 i386은 32비트, amd64는 64비트 머신.
+    * 32비트(i386) 설치, 가상머신 위니까 너무 빡세게(64비트) 못 돌림.
+  * 설치할 때 update skip. (기본 업데이트 서버는 느리니까, 후에 다른 서버로.)
   * guest 확장 설치 (좀 오래걸림!)
     * `Device - Insert Guest Addition CD image ...`
     * 해당 경로로 터미널에서 이동한 후, `sudo ./VBoxLinuxAdditions.run`
