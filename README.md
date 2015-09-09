@@ -37,9 +37,13 @@
  * [ftp 플러그인(Remote System Explorer End-User Runtime) 설치](http://pseg.or.kr/pseg/infouse/3105)
 * Virtual Box 설치
 * Xubuntu (Ubuntu 에서 껍데기만 더 가벼운 버전.) 설치
+  * [설치과정 참고링크 - 생활코딩](https://opentutorials.org/course/488/2601)
+  * 스크린샷은 없지만 꽤. [CERNatschool 깃헙위키](https://github.com/CERNatschool/getting-started/wiki/Creating-a-Xubuntu-14.04-Virtual-Machine-with-VirtualBox)
+  * 껍데기만 다른거니까 [우분투 14 설치글](http://rorlab.gitbooks.io/railsguidebook/content/appendices/ubuntu14server.html) 봐도 됨.
   * i386 / amd64
     * 간단히 말해서 i386은 32비트, amd64는 64비트 머신.
     * 32비트(i386) 설치, 가상머신 위니까 너무 빡세게(64비트) 못 돌림.
+  * RAM 512MB - create virtual hard disk(VDI, dynamically allocated, 8GB)
   * 설치할 때 update skip. (기본 업데이트 서버는 느리니까, 후에 다른 서버로.)
   * guest 확장 설치 (좀 오래걸림!)
     * `Device - Insert Guest Addition CD image ...`
@@ -48,6 +52,11 @@
   * 업데이트
     * 제어판 - 소프트웨어&업데이트 - 서버설정을 다음으로 - 다시읽기 말고 닫기.
     * 터미널에서 `sudo apt-get update` - 서버가 ftp.daum.net 으로 잘 나오는지 확인 - `sudo apt-get upgrade`
+  * iso는 지워도 된다! (근데 왜 에러났을까나ㅜㅜ) [참고](http://askubuntu.com/questions/400413/can-i-delete-the-iso-file-after-installing-ubuntu)
+  * 일반 - 고급 - 클립볻,드래그앤드롭 - 양방향 설정
+  * 네트워크 - 어댑터2 - VirtualBox Host-Only
+  * eth0(외부와 통신) 선택. eth1:내부통신. [참고 슬라이드쉐어,7페이지](http://www.slideshare.net/sigmadream/01-virtual-box)
+  * 
 * [heroku for php](https://devcenter.heroku.com/articles/getting-started-with-php#introduction) - php 는 v5.5 이미 설치 돼 있음.
  * [Composer](https://getcomposer.org/doc/00-intro.md#globally)  설치
  * heroku toolbelt 설치
