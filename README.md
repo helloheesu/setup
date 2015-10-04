@@ -9,6 +9,7 @@
  * 속도 조금 빠르게.
 * 배터리 잔량 퍼센트 표시 : 상태바에 배터리 아이콘 - show percentage
 * 시스템 설정 sound(spotlight 검색) - 이어폰 오른쪽 더 크게..
+* QuickLook 설정[http://macnews.tistory.com/127], better zip 설치
 
 ## 응용 프로그램 설치
 * [크롬 설치](http://www.google.co.kr/chrome/browser/desktop/) : .dmg
