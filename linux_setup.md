@@ -1,9 +1,11 @@
+* 참고 : 아래에 `sudo`는 종종 빼 먹고 씀. 에러나면 sudo 추가도 고려해볼 것.
+
 # git 설치
 * `$ apt-get install git`
 
 # ssh로 원격 접속할 수 있도록 허용
 * sshd 설치 : [`$ apt-get install openssh-server`](http://zetawiki.com/wiki/우분투_sshd_설치/)
-* 허용 IP 대역 : [`/etc/hosts.allow, /etc/hosts.deny` 파일 편집](http://blog.pincoin.co.kr/2012/12/23/특정-ip-또는-ip-대역만-ssh-접속-허용/), [ip '대역'에 대해 설정](http://zetawiki.com/wiki/특정_IP만_SSH_접속_허용하/기)하고 싶다면 그 범위까지만 적어주면 됨.
+* 허용 IP 대역 : [`/etc/hosts.allow`, `/etc/hosts.deny` 파일 편집](http://blog.pincoin.co.kr/2012/12/23/특정-ip-또는-ip-대역만-ssh-접속-허용/)([ip '대역'에 대해 설정](http://zetawiki.com/wiki/특정_IP만_SSH_접속_허용하/기)하고 싶다면 그 범위까지만 적어주면 됨) 후 `$ sudo service ssh restart`
 
 # jdk 설치
 * [oracle installer 로 jdk 8 설치하기](http://tecadmin.net/install-oracle-java-8-jdk-8-ubuntu-via-ppa/#)
@@ -17,7 +19,7 @@
 
 # mysql 설치
 * `$ sudo apt-get install mysql-server`, 앞으로 사용할 mysql의 root 비밀번호 물어보므로 주의.
-* charset utf8 (한글 깨짐 방지/해결) : [`/etc/mysql/my.cnf` 편집](http://mirwebma.tistory.com/5) 후 `$ service mysql restart`
+* charset utf8 (한글 깨짐 방지/해결) : [`/etc/mysql/my.cnf` 편집](http://mirwebma.tistory.com/5) 후 `$ sudo service mysql restart`
 
 # 이전에 사용 중이던 가상서버를 받았다
 * ubuntu 12 -> 14 업그레이드 : 로그인하자마자 버전이 새로 나왔으니 업그레이드 하라고. 알려주는 대로 `$ do-release-upgrade`.
