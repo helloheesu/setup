@@ -9,7 +9,7 @@
 
 # jdk 설치
 * [oracle installer 로 jdk 8 설치하기](http://tecadmin.net/install-oracle-java-8-jdk-8-ubuntu-via-ppa/#)
-  * `sudo: add-apt-repository: command not found` 에러 : [`$ sudo apt-get install software-properties-common`](http://askubuntu.com/questions/593433/error-sudo-add-apt-repository-command-not-found)
+  * `sudo: add-apt-repository: command not found` 에러 : [`$ sudo apt-get install software-properties-common`, (12버전은 `sudo apt-get install python-software-properties`도 해야 함.)](http://askubuntu.com/questions/593433/error-sudo-add-apt-repository-command-not-found)
   * 이렇게 하면 환경변수 설정 등 필요없음! ^^
 * 혹은 .tar.gz 파일을 공식 oracle 페이지에서 직접 다운받아서도 할 수는 있음.
   * `$ uname -a`으로 버전 확인 : `x86_64` - 64bit.
@@ -21,7 +21,7 @@
 * `$ sudo apt-get install mysql-server`, 앞으로 사용할 mysql의 root 비밀번호 물어보므로 주의.
 * charset utf8 (한글 깨짐 방지/해결) : [`/etc/mysql/my.cnf` 편집](http://mirwebma.tistory.com/5) 후 `$ sudo service mysql restart`
 
-# 이전에 사용 중이던 가상서버를 받았다
+# 클라우드 가상서버를 받았다
 * ubuntu 12 -> 14 업그레이드 : 로그인하자마자 버전이 새로 나왔으니 업그레이드 하라고. 알려주는 대로 `$ do-release-upgrade`.
   * 업그레이드 하다가 어떤 창이 나오면서 [`PermitRootLogin`](http://askubuntu.com/questions/449364/what-does-without-password-mean-in-sshd-config-file) 어쩌고 하면 일단 no. ssh 접속 못 할 수도 있으니까 ㅜㅜ
   * package has moved.. 버전이 바뀜에 따라 파일들 경로가 바뀐 건, 패키지 관리자가 하는 대로 따라가기 : `Y`.
