@@ -25,14 +25,14 @@
 * ubuntu 12 -> 14 업그레이드 : 로그인하자마자 버전이 새로 나왔으니 업그레이드 하라고. 알려주는 대로 `$ do-release-upgrade`.
   * 업그레이드 하다가 어떤 창이 나오면서 [`PermitRootLogin`](http://askubuntu.com/questions/449364/what-does-without-password-mean-in-sshd-config-file) 어쩌고 하면 일단 no. ssh 접속 못 할 수도 있으니까 ㅜㅜ
   * package has moved.. 버전이 바뀜에 따라 파일들 경로가 바뀐 건, 패키지 관리자가 하는 대로 따라가기 : `Y`.
-* 하다가 컴퓨터 전원 나감 ㅜㅜ 바뀐 파일 경로가 아직 반영 안 된 게 있음.
-  * `sudo: unable to resolve host hostname`(hostname은 다름) : [`/etc/hosts` 편집](http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none)
-  * `$ sudo apt-get update` 부터 에러.
-    1. `Could not get lock /var/lib/apt/lists/lock - open` : [`$ sudo rm /var/lib/apt/lists/* -vf`](http://ubuntuforums.org/showthread.php?t=1986288)
-    2. `E: Could not get lock /var/lib/dpkg/lock - open (11 Resource temporarily unavailable)   E: Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?`
-      * [ubuntuform의 글](http://ubuntuforums.org/showthread.php?t=1858466)에 matt_symes 의 답변 따라가기.
-        * `$ sudo lsof /var/lib/dpkg/lock` 로 lock 을 걸고있는 `PID`(예: 12345) 확인
-        * `$ sudo kill -TERM 12345`(12345는 위에서 확인한 PID)
-      * [그래도 안 되길래 더 검색.](http://www.blackmoreops.com/2015/08/17/fixing-e-could-not-get-lock-varlibdpkglock-open-11-resource-temporarily-unavailable-error/)
-        * `$ rm /var/lib/dpkg/lock` 하고 나니까 `$ sudo apt-get update` 성공!
+* 하다가 컴퓨터 전원 나감 ㅜㅜ 바뀐 파일 경로가 아직 반영 안 된 게 있음. 그래서 `$ sudo apt-get update` 부터 에러.
+  1. `Could not get lock /var/lib/apt/lists/lock - open` : [`$ sudo rm /var/lib/apt/lists/* -vf`](http://ubuntuforums.org/showthread.php?t=1986288)
+  2. `E: Could not get lock /var/lib/dpkg/lock - open (11 Resource temporarily unavailable)   E: Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?`
+    * [ubuntuform의 글](http://ubuntuforums.org/showthread.php?t=1858466)에 matt_symes 의 답변 따라가기.
+      * `$ sudo lsof /var/lib/dpkg/lock` 로 lock 을 걸고있는 `PID`(예: 12345) 확인
+      * `$ sudo kill -TERM 12345`(12345는 위에서 확인한 PID)
+    * [그래도 안 되길래 더 검색.](http://www.blackmoreops.com/2015/08/17/fixing-e-could-not-get-lock-varlibdpkglock-open-11-resource-temporarily-unavailable-error/)
+      * `$ rm /var/lib/dpkg/lock` 하고 나니까 `$ sudo apt-get update` 성공!
 * root 비밀번호 변경도 했음 : `sudo passwd root`
+* `sudo: unable to resolve host hostname`(hostname은 다름) : [`/etc/hosts` 편집](http://askubuntu.com/questions/59458/error-message-when-i-run-sudo-unable-to-resolve-host-none)
+* [`locale: Cannot set LC_CTYPE to default locale: No such file or directory`](http://askubuntu.com/questions/162391/how-do-i-fix-my-locale-issue)
