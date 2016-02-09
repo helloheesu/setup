@@ -7,6 +7,7 @@
   2. 다행히 엘 캐피탄으로 알아서 설치 됨(다운그레이드 될 줄 알고 쫄았다).
 * three fingers drag가 없다?!
   * --> Accessibility - Mouse&Trackpad에서, Trackpad Options -> [세손가락 드래그 설정.](http://www.idownloadblog.com/2015/06/25/three-finger-drag-gesture-os-x-el-capitan/), 스크롤 속도는 중간이 마음에 드니까 그대로.
+* 혹시 brew 문제나면 [이 글](http://www.hacksparrow.com/os-x-el-capitan-screwed-up-ruby-gems-and-how-to-fix-it.html) 참조.
 
 ## 시스템 환경설정
 * 시계에 날짜 표시 : Date&Time - clock 에서 show date 체크.
