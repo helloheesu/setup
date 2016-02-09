@@ -39,6 +39,7 @@
  * **설치할 때 Accept 누르면 안 됨!!** 야후가 시작페이지로 바뀐다고 ㅜㅜ
 * GetPlainText, Sip, QuickShot
 ## 개발 환경
+* [사파리 개발자 도구 활성화](http://macs.about.com/od/usingyourmac/qt/safaridevelop.htm)
 * [sublime text 3](http://www.sublimetext.com/3), [package control](https://packagecontrol.io/installation)
   * [ftp sync plugin](http://blog.readiz.com/46#.VfBvZmSqqko)
 * nodejs 설치
