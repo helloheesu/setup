@@ -1,36 +1,46 @@
 # Mac OS X
-## 맥 설정
-* 번잡한 바로가기 저리 가
- * 독에서 안 쓰는 어플 지우기
- * 런치패드에서 안 쓰는 어플 숨기기
+
+## El Capitan
+* El Capitan 에서 포맷하기
+  1. 공장초기화 : 복구모드 부팅(cmd + R) - 포맷 - OS 재설치
+    * 포맷 : disk utility - erase - Format : OS X Extended (journaled) / scheme : GUID 파티션 맵
+  2. 다행히 엘 캐피탄으로 알아서 설치 됨(다운그레이드 될 줄 알고 쫄았다).
+* three fingers drag가 없다?!
+  * --> Accessibility - Mouse&Trackpad에서, Trackpad Options -> [세손가락 드래그 설정.](http://www.idownloadblog.com/2015/06/25/three-finger-drag-gesture-os-x-el-capitan/), 스크롤 속도는 중간이 마음에 드니까 그대로.
+
+## 시스템 환경설정
+* 시계에 날짜 표시 : Date&Time - clock 에서 show date 체크.
+* 방화벽 on. 혹시 모르니까.
+* sleep 후 즉시 잠금. energy saver에서 시간 조정. 게스트 계정 unable.
 * 트랙패드 설정
- * 탭해서 클릭하기
- * 세 손가락 드래그
- * 속도 조금 빠르게.
+  * 탭해서 클릭하기
+  * 세 손가락 드래그
+  * 속도 조금 빠르게.
+  * spring-loading delay 야악간 더 빠르게. ([spring-loading delay?](https://www.youtube.com/watch?v=uwNt6UOeNA0))
+* 번잡한 바로가기 저리 가
+   * 독에서 안 쓰는 어플 지우기
+   * 런치패드에서 안 쓰는 어플 숨기기
 * 배터리 잔량 퍼센트 표시 : 상태바에 배터리 아이콘 - show percentage
-* 시스템 설정 sound(spotlight 검색) - 이어폰 오른쪽 더 크게..
-* QuickLook 설정[http://macnews.tistory.com/127], better zip 설치
-* [비슷한 글](http://blog.doortts.com/286) 찾음. 빠진 거 있나 참조해봐도! ^_^
+* [QuickLook 설정](http://macnews.tistory.com/127) (--> 엘 캐피탄에서 안됨 ㅜㅜ), better zip 설치
+
+## 다른글들
+* [1](http://blog.doortts.com/286), [2](https://gist.github.com/DenisIzmaylov/8c9b783dfe8ddc533693)
 
 ## 응용 프로그램 설치
 * [크롬 설치](http://www.google.co.kr/chrome/browser/desktop/) : .dmg
   * [크롬 종료 전에 경고 표시](https://support.google.com/chrome/answer/95631?hl=ko) : 상태바에 Chrome - Warn Before Quitting(⌘Q)
-* [btt 설치](http://www.bettertouchtool.net/) : 폴더 /App 에 집어넣기.
- * MaxSize 단축키 : 마우스 스냅은 default 로 돼 있고, 키보드 단축키 설정.
- * 시작할 때 항상 켜 주고.
- * 쿼터Max 는 안 쓸거고, 양 옆에서 약간은 간격을 두고 Max 면 좋겠고.
-* [카카오톡 for Mac OS X 설치](http://www.kakao.com/talk/ko) : App Store 를 통해서.
- * 알람은 Sender 만 보여주고고
- * 시작할 때 켜고 로그인 해 주되 잠금모드.
+* 이제 유료인 btt 대신 [spectacle](https://github.com/eczarny/spectacle)! start at login.
+* 카카오톡, 라인 설치. start at login.
 * [u토렌트](http://www.utorrent.com/intl/ko/)!
  * **설치할 때 Accept 누르면 안 됨!!** 야후가 시작페이지로 바뀐다고 ㅜㅜ
-
+* GetPlainText, Sip, QuickShot
 ## 개발 환경
 * [sublime text 3](http://www.sublimetext.com/3), [package control](https://packagecontrol.io/installation)
   * [ftp sync plugin](http://blog.readiz.com/46#.VfBvZmSqqko)
-* [nodejs 설치](http://blog.teamtreehouse.com/install-node-js-npm-mac) : `brew install node`
- * 혹시 모르니까 업그레이드 : `brew update && brew upgrade node`
- * .pkg, npm 도 같이 설치 됨.
+* nodejs 설치
+  * 공식페이지에서 nodejs.pkg 받아 설치.
+  * `sudo npm cache clean -f` `sudo npm install -g n` -> `node -v`
+* brew 설치, mongodb 설치.
 * git 설치 : 터미널에서 `$ git`만 쳐도 xCode 어쩌고하면서 안내해준다.
 * [워드프레스 설치](https://ko.wordpress.org/2014/01/01/mamp를-사용해서-내-컴퓨터에-워드프레스-설치하기/)
  * 안내에 따라 MAMP 설치
