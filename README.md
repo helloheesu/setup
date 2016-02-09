@@ -22,7 +22,10 @@
    * 독에서 안 쓰는 어플 지우기
    * 런치패드에서 안 쓰는 어플 숨기기
 * 배터리 잔량 퍼센트 표시 : 상태바에 배터리 아이콘 - show percentage
-* [QuickLook 설정](http://macnews.tistory.com/127) (--> 엘 캐피탄에서 안됨 ㅜㅜ), better zip 설치
+* QuickLook 설정
+  * [간단한 텍스트 편집](http://macnews.tistory.com/127) (--> 엘 캐피탄에서 안됨 ㅜㅜ)
+  * better zip 설치 (betterzipql만을 위해 설치한다...)
+  * `brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package` [참조](https://github.com/sindresorhus/quick-look-plugins)
 
 ## 다른글들
 * [1](http://blog.doortts.com/286), [2](https://gist.github.com/DenisIzmaylov/8c9b783dfe8ddc533693)
