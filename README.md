@@ -31,7 +31,7 @@
 * [1](http://blog.doortts.com/286), [2](https://gist.github.com/DenisIzmaylov/8c9b783dfe8ddc533693)
 
 ## 응용 프로그램 설치
-* [크롬 설치](http://www.google.co.kr/chrome/browser/desktop/) : .dmg
+* 크롬 설치 : `brew cask install google-chrome`
   * [크롬 종료 전에 경고 표시](https://support.google.com/chrome/answer/95631?hl=ko) : 상태바에 Chrome - Warn Before Quitting(⌘Q)
 * 이제 유료인 btt 대신 [spectacle](https://github.com/eczarny/spectacle)! start at login.
 * 카카오톡, 라인 설치. start at login.
