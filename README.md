@@ -26,13 +26,18 @@
   * [간단한 텍스트 편집](http://macnews.tistory.com/127) (--> 엘 캐피탄에서 안됨 ㅜㅜ)
   * better zip 설치 (betterzipql만을 위해 설치한다...)
   * `brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package` [참조](https://github.com/sindresorhus/quick-look-plugins)
-
+* 아이폰 연결시 [photos](http://osxdaily.com/2015/05/31/stop-photos-opening-automatically-mac-os-x/), [itunes](http://www.guidingtech.com/39399/stop-itunes-auto-launch/) 자동 시작 해제.
 ## 다른글들
 * [1](http://blog.doortts.com/286), [2](https://gist.github.com/DenisIzmaylov/8c9b783dfe8ddc533693)
 
 ## 응용 프로그램 설치
 * 크롬 설치 : `brew cask install google-chrome`
   * [크롬 종료 전에 경고 표시](https://support.google.com/chrome/answer/95631?hl=ko) : 상태바에 Chrome - Warn Before Quitting(⌘Q)
+* 사파리 한글 깨짐 - [인코딩 설정](https://discussionskorea.apple.com/thread/6658?start=0&tstart=0)
+* 동영상 플레이어...
+  * VLC는 탈락. 자막 싱크 조절 안 됨. 아니다. [된다.](http://www.clien.net/cs2/bbs/board.php?bo_table=cm_mac&wr_id=191748&page=) 그나마 여러 코덱 지원해서 잘 되는 편.
+  * 곰플레이어는 제일 익숙한 UI에 이것저것 되긴 되는 듯..하나.... 미묘하게 안정적이지 않다. 다운로드 매니저 따로 깔리는 것도 아이콘이나 생김새 별로인 것도 마음에 안 든다.
+  * MplayerX는 안 되는 것도 많고 MacKeeper 까는 것도 짜증.
 * 이제 유료인 btt 대신 [spectacle](https://github.com/eczarny/spectacle)! start at login.
 * 카카오톡, 라인 설치. start at login.
 * [u토렌트](http://www.utorrent.com/intl/ko/)!
