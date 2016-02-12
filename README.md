@@ -50,13 +50,12 @@
 * nodejs 설치
   * 공식페이지에서 nodejs.pkg 받아 설치.
   * `sudo npm cache clean -f` `sudo npm install -g n` -> `node -v`
-* brew 설치, mongodb 설치.
+* [brew](http://brew.sh) 설치, brew cask 설치 (`brew tap caskroom/cask)
+  * mongodb 설치 (`brew install mongodb`), jdk 설치 (`brew cask install java)
 * git 설치 : 터미널에서 `$ git`만 쳐도 xCode 어쩌고하면서 안내해준다.
 * [워드프레스 설치](https://ko.wordpress.org/2014/01/01/mamp를-사용해서-내-컴퓨터에-워드프레스-설치하기/)
  * 안내에 따라 MAMP 설치
 * [eclipse for PHP 설치](http://www.eclipse.org/downloads/packages/eclipse-php-developers/marsr)
- * java 필요하다고 해서 설치. : [brew 를 사용해서!](http://stackoverflow.com/questions/24342886/how-to-install-java-8-on-mac)
-   * [brew](http://brew.sh/) 설치 후 ```brew tap caskroom/cask && brew install brew-cask && brew cask install java```
  * [ftp 플러그인(Remote System Explorer End-User Runtime) 설치](http://pseg.or.kr/pseg/infouse/3105)
 * Virtual Box 설치
 * Xubuntu (Ubuntu 에서 껍데기만 더 가벼운 버전.) 설치
