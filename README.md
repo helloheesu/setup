@@ -27,6 +27,7 @@
   * better zip 설치 (betterzipql만을 위해 설치한다...)
   * `brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package` [참조](https://github.com/sindresorhus/quick-look-plugins)
 * 아이폰 연결시 [photos](http://osxdaily.com/2015/05/31/stop-photos-opening-automatically-mac-os-x/), [itunes](http://www.guidingtech.com/39399/stop-itunes-auto-launch/) 자동 시작 해제.
+
 ## 다른글들
 * [1](http://blog.doortts.com/286), [2](https://gist.github.com/DenisIzmaylov/8c9b783dfe8ddc533693)
 
@@ -43,6 +44,7 @@
 * [u토렌트](http://www.utorrent.com/intl/ko/)!
  * **설치할 때 Accept 누르면 안 됨!!** 야후가 시작페이지로 바뀐다고 ㅜㅜ
 * GetPlainText, Sip, QuickShot
+
 ## 개발 환경
 * [사파리 개발자 도구 활성화](http://macs.about.com/od/usingyourmac/qt/safaridevelop.htm)
 * [sublime text 3](http://www.sublimetext.com/3), [package control](https://packagecontrol.io/installation)
@@ -51,7 +53,9 @@
   * 공식페이지에서 nodejs.pkg 받아 설치.
   * `sudo npm cache clean -f` `sudo npm install -g n` -> `node -v`
 * [brew](http://brew.sh) 설치, brew cask 설치 (`brew tap caskroom/cask)
-  * mongodb 설치 (`brew install mongodb`), jdk 설치 (`brew cask install java)
+* mongodb 설치 (`brew install mongodb`), jdk 설치 (`brew cask install java), eclipse-jee 설치 ('brew cask install eclipse-jee)
+* 이클립스 jee
+  * 깃 플러그인 eGit 설치. [참고](http://itmir.tistory.com/461)
 * git 설치 : 터미널에서 `$ git`만 쳐도 xCode 어쩌고하면서 안내해준다.
 * [워드프레스 설치](https://ko.wordpress.org/2014/01/01/mamp를-사용해서-내-컴퓨터에-워드프레스-설치하기/)
  * 안내에 따라 MAMP 설치
