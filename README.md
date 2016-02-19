@@ -27,6 +27,12 @@
   * better zip 설치 (betterzipql만을 위해 설치한다...)
   * `brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package` [참조](https://github.com/sindresorhus/quick-look-plugins)
 * 아이폰 연결시 [photos](http://osxdaily.com/2015/05/31/stop-photos-opening-automatically-mac-os-x/), [itunes](http://www.guidingtech.com/39399/stop-itunes-auto-launch/) 자동 시작 해제.
+* 키보드 반복입력 속도 조절, 이모티콘 활성화, Text shortcut for 특수문자 ( (별) -> ☆ ) 
+* 확대/축소 : accessibility - zoom
+  * [ x ] keyboard shortcut
+  * [ v ] scroll gesture - ⌃⌥⌘
+  * [ v ] smooth images, zoom follows keyboard focus
+  * Zoom style : full screen
 
 ## 다른글들
 * [1](http://blog.doortts.com/286), [2](https://gist.github.com/DenisIzmaylov/8c9b783dfe8ddc533693)
@@ -52,6 +58,7 @@
 * nodejs 설치
   * 공식페이지에서 nodejs.pkg 받아 설치.
   * `sudo npm cache clean -f` `sudo npm install -g n` -> `node -v`
+  * webpack (`sudo npm install webpack -g`) 설치
 * [brew](http://brew.sh) 설치, brew cask 설치 (`brew tap caskroom/cask)
 * mongodb 설치 (`brew install mongodb`), jdk 설치 (`brew cask install java), eclipse-jee 설치 ('brew cask install eclipse-jee)
 * 이클립스 jee
