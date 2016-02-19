@@ -28,11 +28,11 @@
   * `brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package` [참조](https://github.com/sindresorhus/quick-look-plugins)
 * 아이폰 연결시 [photos](http://osxdaily.com/2015/05/31/stop-photos-opening-automatically-mac-os-x/), [itunes](http://www.guidingtech.com/39399/stop-itunes-auto-launch/) 자동 시작 해제.
 * 키보드 반복입력 속도 조절, 이모티콘 활성화, Text shortcut for 특수문자 ( (별) -> ☆ ) 
-* 확대/축소 : accessibility - zoom
-  * [ x ] keyboard shortcut
-  * [ v ] scroll gesture - ⌃⌥⌘
+* 확대/축소 : accessibility - zoom, show accessibility status in menu bar
+  * (써보니까 불편함. 화면 전체에 딱 고정돼서 보이면 좋겠는데 이리저리 왔다갔다.. 그냥 display에서 모니터 해상도를 scaled- 1280x800 으로 바꿈.)
+  * [ x ] keyboard shortcut, scroll gesture - ⌃⌥⌘
   * [ v ] smooth images, zoom follows keyboard focus
-  * Zoom style : full screen
+  * Zoom style : picture in picture
 
 ## 다른글들
 * [1](http://blog.doortts.com/286), [2](https://gist.github.com/DenisIzmaylov/8c9b783dfe8ddc533693)
