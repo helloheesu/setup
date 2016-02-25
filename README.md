@@ -38,30 +38,28 @@
 * [1](http://blog.doortts.com/286), [2](https://gist.github.com/DenisIzmaylov/8c9b783dfe8ddc533693)
 
 ## 응용 프로그램 설치
-* 크롬 설치 : `brew cask install google-chrome`
-  * [크롬 종료 전에 경고 표시](https://support.google.com/chrome/answer/95631?hl=ko) : 상태바에 Chrome - Warn Before Quitting(⌘Q)
+* [brew](http://brew.sh) 설치, brew cask 설치 (`brew tap caskroom/cask)
+  * 크롬 설치 : `brew cask install google-chrome`
+    * [크롬 종료 전에 경고 표시](https://support.google.com/chrome/answer/95631?hl=ko) : 상태바에 Chrome - Warn Before 
+Quitting(⌘Q)
+  * 코덱도 많고 [자막 싱크 조절](http://www.clien.net/cs2/bbs/board.php?bo_table=cm_mac&wr_id=191748&page=)도 되는 동영상 플레이어 VLC 설치 : `brew cask install vlc`
+  * 이제 유료인 btt 대신 [spectacle](https://github.com/eczarny/spectacle)! : `brew cask install spectacle`
+    * start at login 체크, 단축키 설정.
+  * [u토렌트](http://www.utorrent.com/intl/ko/)도 brew에 있긴한데 [transmission](http://www.transmissionbt.com)으로 갈아탈까함.
 * 사파리 한글 깨짐 - [인코딩 설정](https://discussionskorea.apple.com/thread/6658?start=0&tstart=0)
-* 동영상 플레이어...
-  * VLC는 탈락. 자막 싱크 조절 안 됨. 아니다. [된다.](http://www.clien.net/cs2/bbs/board.php?bo_table=cm_mac&wr_id=191748&page=) 그나마 여러 코덱 지원해서 잘 되는 편.
-  * 곰플레이어는 제일 익숙한 UI에 이것저것 되긴 되는 듯..하나.... 미묘하게 안정적이지 않다. 다운로드 매니저 따로 깔리는 것도 아이콘이나 생김새 별로인 것도 마음에 안 든다.
-  * MplayerX는 안 되는 것도 많고 MacKeeper 까는 것도 짜증.
-* 이제 유료인 btt 대신 [spectacle](https://github.com/eczarny/spectacle)! start at login.
 * 카카오톡, 라인 설치. start at login.
-* [u토렌트](http://www.utorrent.com/intl/ko/)!
- * **설치할 때 Accept 누르면 안 됨!!** 야후가 시작페이지로 바뀐다고 ㅜㅜ
 * GetPlainText, Sip, QuickShot
 
 ## 개발 환경
 * [사파리 개발자 도구 활성화](http://macs.about.com/od/usingyourmac/qt/safaridevelop.htm)
-* [sublime text 3](http://www.sublimetext.com/3), [package control](https://packagecontrol.io/installation)
+* [sublime text 3](http://www.sublimetext.com/3)도 brew cask에 있음ㅋㅋㅋㅋㅋㅋㅋ, [package control](https://packagecontrol.io/installation)
   * [ftp sync plugin](http://blog.readiz.com/46#.VfBvZmSqqko)
 * nodejs 설치
   * 공식페이지에서 nodejs.pkg 받아 설치.
   * `sudo npm cache clean -f` `sudo npm install -g n` -> `node -v`
   * webpack (`sudo npm install webpack -g`) 설치
-* [brew](http://brew.sh) 설치, brew cask 설치 (`brew tap caskroom/cask)
-* mongodb 설치 (`brew install mongodb`), jdk 설치 (`brew cask install java), eclipse-jee 설치 ('brew cask install eclipse-jee)
-* 이클립스 jee
+* mongodb 설치 (`brew install mongodb`), jdk 설치 (`brew cask install java`)
+* 이클립스 jee 설치 : `brew cask install eclipse-jee`
   * 깃 플러그인 eGit 설치. [참고](http://itmir.tistory.com/461)
 * git 설치 : 터미널에서 `$ git`만 쳐도 xCode 어쩌고하면서 안내해준다.
 * [워드프레스 설치](https://ko.wordpress.org/2014/01/01/mamp를-사용해서-내-컴퓨터에-워드프레스-설치하기/)
