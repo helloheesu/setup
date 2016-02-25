@@ -52,7 +52,7 @@ Quitting(⌘Q)
 
 ## 개발 환경
 * [사파리 개발자 도구 활성화](http://macs.about.com/od/usingyourmac/qt/safaridevelop.htm)
-* [sublime text 3](http://www.sublimetext.com/3)도 brew cask에 있음ㅋㅋㅋㅋㅋㅋㅋ, [package control](https://packagecontrol.io/installation)
+* [sublime text 3](http://www.sublimetext.com/3)도 brew cask에 있음ㅋㅋㅋㅋㅋㅋㅋ (`brew tap caskroom/versions; brew cask install sublime-text3`), [package control](https://packagecontrol.io/installation)
   * [ftp sync plugin](http://blog.readiz.com/46#.VfBvZmSqqko)
 * nodejs 설치
   * 공식페이지에서 nodejs.pkg 받아 설치.
