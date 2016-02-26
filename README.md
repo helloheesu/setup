@@ -66,6 +66,7 @@ alias whatismyip="ifconfig | grep -e 'inet [0-9]*\.[0-9]*\.[0-9]*\.[0-9]*'"
 * [사파리 개발자 도구 활성화](http://macs.about.com/od/usingyourmac/qt/safaridevelop.htm)
 * [sublime text 3](http://www.sublimetext.com/3)도 brew cask에 있음ㅋㅋㅋㅋㅋㅋㅋ (`brew cask install sublime-text3`), [package control](https://packagecontrol.io/installation)
   * [ftp sync plugin](http://blog.readiz.com/46#.VfBvZmSqqko)
+  * [material theme](https://github.com/equinusocio/material-theme) - terminal, vim 등 머티리얼로 도배! ㅋㅋ
 * nodejs 설치
   * 공식페이지에서 nodejs.pkg 받아 설치.
   * `sudo npm cache clean -f` `sudo npm install -g n` -> `node -v`
