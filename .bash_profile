@@ -16,6 +16,9 @@ alias chrome="open -a \"/Applications/Google Chrome.app\""
 alias sublime="open -a \"/Applications/Sublime Text.app\""
 alias whatismyip="ifconfig | grep -e 'inet [0-9]*\.[0-9]*\.[0-9]*\.[0-9]*'"
 
+# make symlink of brew cask into /Applications
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 # http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
 # http://manpages.ubuntu.com/manpages/oneiric/man1/bash.1.html > find 'insensitive'
 bind "set completion-ignore-case on"
@@ -53,7 +56,7 @@ CommandNumber="\!"
 # http://code-worrier.com/blog/autocomplete-git/
 # 
 if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+  source ~/.git-completion.bash
 else
   curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 fi
