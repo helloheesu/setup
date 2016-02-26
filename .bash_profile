@@ -16,8 +16,10 @@ alias chrome="open -a \"/Applications/Google Chrome.app\""
 alias sublime="open -a \"/Applications/Sublime Text.app\""
 alias whatismyip="ifconfig | grep -e 'inet [0-9]*\.[0-9]*\.[0-9]*\.[0-9]*'"
 
-# make symlink of brew cask into /Applications
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+#### BREW
+export HOMEBREW_CASK_OPTS="--appdir=/Applications" # make symlink of brew cask into /Applications
+export HOMEBREW_GITHUB_API_TOKEN=THE_TOKEN # https://gist.github.com/christopheranderton/8644743
+source $(brew --repository)/Library/Contributions/brew_bash_completion.sh # brew install homebrew/completions/brew-cask-completion
 
 # http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
 # http://manpages.ubuntu.com/manpages/oneiric/man1/bash.1.html > find 'insensitive'
