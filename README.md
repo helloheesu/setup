@@ -38,7 +38,7 @@
 * [1](http://blog.doortts.com/286), [2](https://gist.github.com/DenisIzmaylov/8c9b783dfe8ddc533693)
 
 ## 응용 프로그램 설치
-* [brew](http://brew.sh) 설치, brew cask 설치 (`brew tap caskroom/cask)
+* [brew](http://brew.sh) 설치, brew cask 설치 (`brew tap caskroom/cask`), cask version 설치(`brew tap caskroom/versions`)
   * 크롬 설치 : `brew cask install google-chrome`
     * [크롬 종료 전에 경고 표시](https://support.google.com/chrome/answer/95631?hl=ko) : 상태바에 Chrome - Warn Before 
 Quitting(⌘Q)
@@ -57,10 +57,6 @@ $ brew list
 boost		lua		mongodb		nspr		readline	tree
 highlight	maven		mysql		openssl		spidermonkey	unar
 alias whatismyip="ifconfig | grep -e 'inet [0-9]*\.[0-9]*\.[0-9]*\.[0-9]*'"
-
-# Specify your defaults in this environment variable
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
 ```
 * 사파리 한글 깨짐 - [인코딩 설정](https://discussionskorea.apple.com/thread/6658?start=0&tstart=0)
 * 카카오톡, 라인 설치. start at login.
@@ -68,7 +64,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 ## 개발 환경
 * [사파리 개발자 도구 활성화](http://macs.about.com/od/usingyourmac/qt/safaridevelop.htm)
-* [sublime text 3](http://www.sublimetext.com/3)도 brew cask에 있음ㅋㅋㅋㅋㅋㅋㅋ (`brew tap caskroom/versions; brew cask install sublime-text3`), [package control](https://packagecontrol.io/installation)
+* [sublime text 3](http://www.sublimetext.com/3)도 brew cask에 있음ㅋㅋㅋㅋㅋㅋㅋ (`brew cask install sublime-text3`), [package control](https://packagecontrol.io/installation)
   * [ftp sync plugin](http://blog.readiz.com/46#.VfBvZmSqqko)
 * nodejs 설치
   * 공식페이지에서 nodejs.pkg 받아 설치.
