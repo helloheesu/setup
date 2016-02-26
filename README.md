@@ -67,6 +67,7 @@ alias whatismyip="ifconfig | grep -e 'inet [0-9]*\.[0-9]*\.[0-9]*\.[0-9]*'"
 * [sublime text 3](http://www.sublimetext.com/3)도 brew cask에 있음ㅋㅋㅋㅋㅋㅋㅋ (`brew cask install sublime-text3`), [package control](https://packagecontrol.io/installation)
   * [ftp sync plugin](http://blog.readiz.com/46#.VfBvZmSqqko)
   * [material theme](https://github.com/equinusocio/material-theme) - terminal, vim 등 머티리얼로 도배! ㅋㅋ
+    * vim colorscheme 바꿀때는, 구글에 슥 나오는것처럼 설치폴더에 뭔짓하려하지말고, `$ mkdir -p ~/.vim/colors` 해서 집어넣을 것.
 * nodejs 설치
   * 공식페이지에서 nodejs.pkg 받아 설치.
   * `sudo npm cache clean -f` `sudo npm install -g n` -> `node -v`
