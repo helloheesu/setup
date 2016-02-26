@@ -38,7 +38,7 @@
 * [1](http://blog.doortts.com/286), [2](https://gist.github.com/DenisIzmaylov/8c9b783dfe8ddc533693)
 
 ## 응용 프로그램 설치
-* [brew](http://brew.sh) 설치, brew cask 설치 (`brew tap caskroom/cask`), cask version 설치(`brew tap caskroom/versions`)
+* [brew](http://brew.sh) 설치, brew cask 설치 (`brew tap caskroom/cask`), cask version 설치(`brew tap caskroom/versions`), tap completion 설치(`brew install homebrew/completions/brew-cask-completion`, .bash_profile 설정도 해야 함.)
   * 크롬 설치 : `brew cask install google-chrome`
     * [크롬 종료 전에 경고 표시](https://support.google.com/chrome/answer/95631?hl=ko) : 상태바에 Chrome - Warn Before 
 Quitting(⌘Q)
