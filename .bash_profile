@@ -1,29 +1,20 @@
-# TODO
-# predict command from history
-# ex) vi -> vi .bash_profile || same as "history | grep vi"
-# There's a solution already, outside. : ctrl+R
-# http://unix.stackexchange.com/questions/5366/command-line-completion-from-command-history
-
-# bash tutorials
-# http://wiki.bash-hackers.org/scripting/tutoriallist
-# vim regex
-# http://vimregex.com/#ranges
-# vim yy to clipboard
-# http://superuser.com/questions/690436/how-can-i-copy-into-the-mac-clipboard-from-vim
-
 alias ls="ls -alhF"
-alias chrome="open -a \"/Applications/Google Chrome.app\""
-alias sublime="open -a \"/Applications/Sublime Text.app\""
 alias whatismyip="ifconfig | grep -e 'inet [0-9]*\.[0-9]*\.[0-9]*\.[0-9]*'"
 
-#### BREW
+# BREW
 export HOMEBREW_CASK_OPTS="--appdir=/Applications" # make symlink of brew cask into /Applications
 export HOMEBREW_GITHUB_API_TOKEN=THE_TOKEN # https://gist.github.com/christopheranderton/8644743
 source $(brew --repository)/Library/Contributions/brew_bash_completion.sh # brew install homebrew/completions/brew-cask-completion
 
-# http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
-# http://manpages.ubuntu.com/manpages/oneiric/man1/bash.1.html > find 'insensitive'
+# bash tap completion ignore case
 bind "set completion-ignore-case on"
+
+
+
+
+
+
+### for git
 
 # Colors
 ColorOff="\[\033[0m\]"       # Text Reset
@@ -43,33 +34,16 @@ Path="\W"
 #CommandNumber="\#" #count not after login, but as is history
 CommandNumber="\!"
 
-# Colors and Commands
-# http://www.ibm.com/developerworks/linux/library/l-tip-prompt/
-
-# Bash Commands
-# >&
-# http://superuser.com/questions/335396/what-is-the-difference-between-and-in-bash
-# 2>&1
-# http://stackoverflow.com/questions/818255/in-the-shell-what-is-21
-# $? -eq 0
-# http://stackoverflow.com/questions/7101995/what-does-if-eq-0-mean-for-shell-scripts
-
-
-# http://code-worrier.com/blog/autocomplete-git/
-# 
-if [ -f ~/.git-completion.bash ]; then
-  source ~/.git-completion.bash
-else
+if [ ! -f ~/.git-completion.bash ]; then
   curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 fi
+source ~/.git-completion.bash
 
-
-source ~/.git-prompt.sh
-if [ -f ~/.git-prompt.sh ]; then
-  source ~/.git-prompt.sh
-else
+if [ ! -f ~/.git-prompt.sh ]; then
   curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
 fi
+source ~/.git-prompt.sh
+
 # https://gist.github.com/trey/2722934#bash-fanciness
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWSTASHSTATE=true
@@ -94,42 +68,3 @@ if [ $? -eq 0 ]; then \
   fi) '$ColorOff'"; \
 fi)'\
 "$Path \$ "
-
-
-# bash alias argument
-# http://stackoverflow.com/questions/7131670/make-bash-alias-that-takes-parameter
-# bash shell hex converter
-# http://hints.macworld.com/article.php?story=2003030107340199
-# nested echo
-# http://stackoverflow.com/questions/2657012/how-to-properly-nest-bash-backticks
-# (standard_in) 1: parse error
-# http://www.unix.com/shell-programming-and-scripting/140049-standard_in-1-parse-error.html
-# expr
-# http://www.unix.com/shell-programming-and-scripting/140222-expr-non-numeric-argument.html
-# convert to UPPER/lower case
-# http://www.cyberciti.biz/faq/linux-unix-shell-programming-converting-lowercase-uppercase/
-# bash local variable scope
-# http://www.tldp.org/LDP/abs/html/localvar.html
-# base regex replace
-# http://stackoverflow.com/questions/13043344/search-and-replace-in-bash-using-regular-expressions
-# base regex match
-# http://www.itworld.com/article/2693361/unix-tip-using-bash-s-regular-expressions.html
-hextodec() {
-# echo "ibase=16; $(echo "${1^^})" | bc # bash version lower than 4
-	x=$(echo "$1" | sed -e 's/^0[Xx]//' | tr '[a-z]' '[A-Z]')
-	echo "ibase=16; $x" | bc
-}
-alias h2d=hextodec
-
-dectohex() {
-	echo "obase=16;ibase=10; $1" | bc
-}
-alias d2h=dectohex
-
-# http://www.maclife.com/article/columns/terminal_101_using_find_command
-easyfind() {
-	find ./ -iname "$1"
-}
-alias find=easyfind
-
-export PATH=/usr/local/mysql/bin:$PATH 
