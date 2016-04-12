@@ -48,15 +48,17 @@ Quitting(⌘Q)
   * [u토렌트](http://www.utorrent.com/intl/ko/)도 brew에 있긴한데 [transmission](http://www.transmissionbt.com)으로 갈아탈까함.
 ```
 $ brew cask list
-eclipse-jee	    postman		qlmarkdown	    quicklook-json	suspicious-package  webpquicklook
-google-chrome	    qlcolorcode		qlprettypatch	    spectacle		transmission
-java		    qlimagesize		qlstephen	    sublime-text3	vlc
+arduino		java		qlmarkdown	quicklook-json	sublime-text3
+bittorrent	postman		qlprettypatch	spectacle	vlc
+eclipse-jee	qlcolorcode	qlstephen	sqlitebrowser	webpquicklook
+google-chrome	qlimagesize	quicklook-csv	steam		webstorm
 ```
 ```
 $ brew list
-boost		lua		mongodb		nspr		readline	tree
-highlight	maven		mysql		openssl		spidermonkey	unar
-alias whatismyip="ifconfig | grep -e 'inet [0-9]*\.[0-9]*\.[0-9]*\.[0-9]*'"
+bash-completion		lua			qt			unar
+boost			maven			readline
+brew-cask-completion	mysql			sqlite
+highlight		openssl			tree
 ```
 * 사파리 한글 깨짐 - [인코딩 설정](https://discussionskorea.apple.com/thread/6658?start=0&tstart=0)
 * 카카오톡, 라인 설치. start at login.
