@@ -4,7 +4,9 @@ alias whatismyip="ifconfig | grep -e 'inet [0-9]*\.[0-9]*\.[0-9]*\.[0-9]*'"
 # BREW
 export HOMEBREW_CASK_OPTS="--appdir=/Applications" # make symlink of brew cask into /Applications
 export HOMEBREW_GITHUB_API_TOKEN=THE_TOKEN # https://gist.github.com/christopheranderton/8644743
-source $(brew --repository)/Library/Contributions/brew_bash_completion.sh # brew install homebrew/completions/brew-cask-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
 
 # bash tap completion ignore case
 bind "set completion-ignore-case on"
