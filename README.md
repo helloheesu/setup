@@ -20,6 +20,7 @@
   * spring-loading delay 야악간 더 빠르게. ([spring-loading delay?](https://www.youtube.com/watch?v=uwNt6UOeNA0))
 * 번잡한 바로가기 저리 가
    * 독에서 안 쓰는 어플 지우기
+   * 독에서 다운로드 폴더 고정, display as (stack말고)folder.
    * 런치패드에서 안 쓰는 어플 숨기기
 * 배터리 잔량 퍼센트 표시 : 상태바에 배터리 아이콘 - show percentage
 * QuickLook 설정
