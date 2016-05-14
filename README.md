@@ -45,7 +45,6 @@ Quitting(⌘Q)
   * 코덱도 많고 [자막 싱크 조절](http://www.clien.net/cs2/bbs/board.php?bo_table=cm_mac&wr_id=191748&page=)도 되는 동영상 플레이어 VLC 설치 : `brew cask install vlc`
   * 이제 유료인 btt 대신 [spectacle](https://github.com/eczarny/spectacle)! : `brew cask install spectacle`
     * start at login 체크, 단축키 설정.
-  * [u토렌트](http://www.utorrent.com/intl/ko/)도 brew에 있긴한데 [transmission](http://www.transmissionbt.com)으로 갈아탈까함.
 ```
 $ brew cask list
 arduino		java		qlmarkdown	quicklook-json	sublime-text3
