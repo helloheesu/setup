@@ -13,10 +13,10 @@ bind "set completion-ignore-case on"
 
 
 
-
-
-
 ### for git
+
+alias deletebranch="git branch | grep -v \* | xargs git branch -d"
+
 
 # Colors
 ColorOff="\[\033[0m\]"       # Text Reset
