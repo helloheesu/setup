@@ -1,0 +1,4 @@
+- git 설치: 터미널에서 `$ git`만 쳐도 xCode 어쩌고하면서 안내해준다
+  - `xcode-select : note: no developer tools were found at '/Applications/Xcode.add', requesting install. Choose an option in the dialog to download the command line developer tools.` -> `xcode-select --install`
+  - mac os 업데이트 후 `xcode-select: note: install requested for command line developer tools`라는 오류 -> 설치 프롬프트 뜨면 따라가면 됨
+- nodejs: 공홈에서 pkg 다운받아 설치
