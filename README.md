@@ -1,20 +1,18 @@
 # Mac OS X
 
-## El Capitan
-* El Capitan 에서 포맷하기
-  1. 공장초기화 : 복구모드 부팅(cmd + R) - 포맷 - OS 재설치
-    * 포맷 : disk utility - erase - Format : OS X Extended (journaled) / scheme : GUID 파티션 맵
-  2. 다행히 엘 캐피탄으로 알아서 설치 됨(다운그레이드 될 줄 알고 쫄았다).
+## Mac 환경설정
 * three fingers drag가 없다?!
   * --> Accessibility - Mouse&Trackpad에서, Trackpad Options -> [세손가락 드래그 설정.](http://www.idownloadblog.com/2015/06/25/three-finger-drag-gesture-os-x-el-capitan/), 스크롤 속도는 중간이 마음에 드니까 그대로.
-* 혹시 brew 문제나면 [이 글](http://www.hacksparrow.com/os-x-el-capitan-screwed-up-ruby-gems-and-how-to-fix-it.html) 참조.
 
 ## 시스템 환경설정
-* 시계에 날짜 표시 : Date&Time - clock 에서 show date 체크.
-* 방화벽 on. 혹시 모르니까.
-* sleep 후 즉시 잠금. energy saver에서 시간 조정. 게스트 계정 unable.
-* 트랙패드 설정
+시스템 설정에서 아래 키워드들로 검색하면 어렵지 않게 찾을 수 있음
+* `시계`에 날짜, 표, 구분자 표시
+* `방화벽` on. 혹시 모르니까
+* `잠금 화면 (sleep)` 시간 조정: 디스플레이가 꺼진 후 암호 요구 **즉시**
+* `방문 사용자 (guest)` 계정 unable.
+* `트랙패드` 설정
   * 탭해서 클릭하기
+* 손쉬운 사용 > `트랙패드` 설정
   * 세 손가락 드래그
   * 속도 조금 빠르게.
   * spring-loading delay 야악간 더 빠르게. ([spring-loading delay?](https://www.youtube.com/watch?v=uwNt6UOeNA0))
@@ -22,7 +20,7 @@
    * 독에서 안 쓰는 어플 지우기
    * 독에서 다운로드 폴더 고정, display as (stack말고)folder.
    * 런치패드에서 안 쓰는 어플 숨기기
-* 배터리 잔량 퍼센트 표시 : 상태바에 배터리 아이콘 - show percentage
+* `배터리` 잔량 퍼센트 표시
 * QuickLook 설정
   * [간단한 텍스트 편집](http://macnews.tistory.com/127) (--> 엘 캐피탄에서 안됨 ㅜㅜ)
   * better zip 설치 (betterzipql만을 위해 설치한다...)
